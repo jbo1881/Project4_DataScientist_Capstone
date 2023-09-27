@@ -9,13 +9,38 @@
 - [Licensing, Authors, Acknowledgements](#licensing-authors-acknowledgements)
 
 ## Installation
-The following Python libraries should be installed:
- 
-- pandas (import pandas as pd): A versatile library used for data manipulation and analysis. It provides data structures like DataFrames that allow you to efficiently work with structured data.
-- matplotlib.pyplot (import matplotlib.pyplot as plt): A part of the matplotlib library used for creating various types of visualizations, such as plots and charts.
-- sklearn: which provides tools for machine learning and data analysis. It's used here for linear regression modeling and evaluation.
-- datetime
-- seaborn
+## Libraries Used
+
+This project utilizes several Python libraries for data handling, visualization, and machine learning:
+
+1. **pandas (`import pandas as pd`):**
+   Pandas is a powerful data manipulation and analysis library that provides data structures like DataFrame, essential for organizing and processing data effectively.
+
+2. **numpy (`import numpy as np`):**
+   NumPy is a fundamental library for numerical operations in Python. It's extensively used for mathematical and logical operations on arrays.
+
+3. **datetime (`import datetime`):**
+   The datetime module from the Python standard library is used to work with dates and times. In this project, it's used to calculate the age of the cars.
+
+4. **matplotlib (`import matplotlib.pyplot as plt`):**
+   Matplotlib is a popular plotting library that helps in creating static, animated, and interactive visualizations in Python. It's crucial for understanding data patterns and trends.
+
+5. **seaborn (`import seaborn as sns`):**
+   Seaborn is built on top of Matplotlib and provides an aesthetically pleasing and informative statistical graphics. It helps in creating attractive and informative statistical graphics.
+
+6. **scikit-learn (`from sklearn...`):**
+   Scikit-learn is a powerful machine learning library that provides various tools and techniques for building and evaluating machine learning models. In this project, we use functions for data preprocessing, model training, and evaluation.
+
+   - `train_test_split`: Splits the dataset into training and testing sets.
+   - `RandomForestRegressor`: Implements the Random Forest regression model.
+   - `r2_score`: Computes the R-squared (R2) score for model evaluation.
+   - `StandardScaler`: Standardizes features by removing the mean and scaling to unit variance.
+   - `GridSearchCV` and `RandomizedSearchCV`: Tools for hyperparameter tuning.
+   - `randint` from `scipy.stats`: Generates random integers, useful for hyperparameter tuning.
+
+These libraries are essential for handling data, visualizing insights, and building the machine learning model in this project.
+
+
 The data was collected form 762,091 used cars scraped from cars.com. The data was ingested on Apr, 2023.
 
 ## Project Motivation
