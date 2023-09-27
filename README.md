@@ -13,16 +13,31 @@ The following Python libraries should be installed:
  
 - pandas (import pandas as pd): A versatile library used for data manipulation and analysis. It provides data structures like DataFrames that allow you to efficiently work with structured data.
 - matplotlib.pyplot (import matplotlib.pyplot as plt): A part of the matplotlib library used for creating various types of visualizations, such as plots and charts.
-- sklearn (from sklearn.model_selection import train_test_split, from sklearn.linear_model import LinearRegression, from sklearn.metrics import mean_squared_error): Part of the Scikit-learn library, which provides tools for machine learning and data analysis. It's used here for linear regression modeling and evaluation.
-The data was collected for a period of 2014 - 2022 years, divided into trimesters. The prices go by neighbourhoods and districts.
+- sklearn: which provides tools for machine learning and data analysis. It's used here for linear regression modeling and evaluation.
+- datetime
+- seaborn
+The data was collected form 762,091 used cars scraped from cars.com. The data was ingested on Apr, 2023.
 
 ## Project Motivation
-In order to complete the Project: Writing a Data Scientist Blog Post from the Data Scientist course of Udacity, the dataset named 'Rent price in Barcelona 2014 - 2022' from Kaggle includes data on price for rent in Barcelona, Spain. 
+The motivation behind this project is to develop a robust and accurate model to predict the prices of used cars. This project addresses several important objectives:
 
-The dataset was filtered to answer these 3 questions I was interested in:
-1. What Are the Most Expensive and Affordable Neighborhoods for Renting in Barcelona by Year?
-2. How Have Rental Prices Evolved Over the Years in Different Districts of Barcelona?
-3. Are There Seasonal Patterns in Barcelona's Rental Prices Across Trimesters?
+1. **Consumer Assistance:**
+   Buying or selling a used car can be challenging, and determining a fair price is crucial. This project aims to provide a tool that assists both buyers and sellers in estimating a reasonable market value for used cars.
+
+2. **Market Understanding:**
+   Understanding the factors that influence the price of a used car is essential for market players such as dealers, buyers, and sellers. By creating a predictive model, we gain valuable insights into how various features impact the price.
+
+3. **Machine Learning Application:**
+   The project provides a practical application of machine learning techniques, particularly regression, in a domain that's relevant to a wide audience. It showcases the power of data-driven approaches in solving real-world problems.
+
+4. **Improving Decision-Making:**
+   Accurate price predictions empower buyers to make informed decisions about purchasing a used car and help sellers set reasonable prices. This ultimately contributes to a fairer and more efficient used car market.
+
+5. **Open Source Contribution:**
+   By open-sourcing this project, we aim to contribute to the open source community. Developers and data enthusiasts can learn from, build upon, and enhance this project, fostering collaboration and knowledge sharing.
+
+
+
 
 ## File Descriptions
 
