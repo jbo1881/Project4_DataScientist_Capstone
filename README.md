@@ -57,4 +57,4 @@ The main findings of the code can be found in the related Medium post: [Used Car
 
 
 ## Licensing, Authors, Acknowledgements
-Credit for the data is attributed to Kaggle. For detailed data licensing and additional descriptive information, you can refer to the Kaggle dataset: [Used Cars Dataset]([https://www.kaggle.com/datasets/marshuu/rent-price-in-barcelona-2014-2022](https://www.kaggle.com/datasets/andreinovikov/used-cars-dataset)https://www.kaggle.com/datasets/andreinovikov/used-cars-dataset).
+Credit for the data is attributed to Kaggle. For detailed data licensing and additional descriptive information, you can refer to the Kaggle dataset: [Used Cars Dataset](https://www.kaggle.com/datasets/andreinovikov/used-cars-dataset)https://www.kaggle.com/datasets/andreinovikov/used-cars-dataset).
