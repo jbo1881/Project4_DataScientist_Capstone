@@ -2,13 +2,28 @@
 
 ## Table of Contents
 
+- [Overview](#overview)
 - [Installation](#installation)
 - [Project Motivation](#project-motivation)
 - [File Descriptions](#file-descriptions)
 - [Results](#results)
 - [Licensing, Authors, Acknowledgements](#licensing-authors-acknowledgements)
 
+## Overview
+This project involves predicting the prices of used cars based on several features such as manufacturer, model, year, mileage, transmission type, drivetrain, fuel type, MPG (Miles Per Gallon), previous accidents, and price reduction from the initial price. The prediction model utilizes a Random Forest Regression algorithm to estimate the price of a used car.
+
+The data comprises information from 762,091 used cars gathered from cars.com, collected in April 2023.
+
+
 ## Installation
+### Running the Prediction Interface
+1. Ensure Jupyter Notebook is installed.
+2. Open the notebook `Cars.ipynb` containing the prediction interface.
+3. Download `cars.csv` from `cars.zip`.
+4. Execute the cells containing the interface code.
+5. Follow the prompts to input the car's details and obtain the predicted price.
+
+
 ## Libraries Used
 
 This project utilizes several Python libraries for data handling, visualization, and machine learning:
@@ -41,8 +56,6 @@ This project utilizes several Python libraries for data handling, visualization,
 These libraries are essential for handling data, visualizing insights, and building the machine learning model in this project.
 
 
-The data was collected form 762,091 used cars scraped from cars.com. The data was ingested on Apr, 2023.
-
 ## Project Motivation
 The motivation behind this project is to develop a robust and accurate model to predict the prices of used cars. This project addresses several important objectives:
 
@@ -62,34 +75,27 @@ The motivation behind this project is to develop a robust and accurate model to 
    By open-sourcing this project, we aim to contribute to the open source community. Developers and data enthusiasts can learn from, build upon, and enhance this project, fostering collaboration and knowledge sharing.
 
 
-
-
 ## File Descriptions
 
-The Jupyter Notebook `bcn_rent_prices.ipynb` combines data manipulation and visualization techniques to analyze the dataset `Barcelona_rent_price.csv`. This notebook provides insights into rental price trends in Barcelona's neighborhoods and districts. It also utilizes historical data to make predictions for future rental prices.
+The Jupyter Notebook `Cars.ipynb` combines data manipulation and visualization techniques to analyze the dataset `cars.csv`. This notebook provides insights into price predictions of used cars. It utilizes historical data to make predictions for car prices based on details like manufacturer, model, year, mileage, engine specifications, transmission, drivetrain, fuel type, car history (accidents or damage), owner details, seller information, ratings, and prices.
 
-Code Sections:
-1. Analyzing Neighborhood Rental Prices:
-   - Loads rental price data into a pandas DataFrame.
-   - Filters and focuses on rows with 'average rent (euro/month)' prices.
-   - Groups data by year and neighborhood, calculates the mean price, and creates a DataFrame (neigh_rents).
-  
-2. Visualizing Most and Least Expensive Neighborhoods:
-   - Defines functions to find most and least expensive neighborhoods for each year.
-   - Iterates through years and stores results in a list.
-   - Prepares data for a grouped bar plot comparing most and least expensive neighborhoods over the years.
-   - Creates a grouped bar plot visualizing the data.
+### Code Structure:
+### 1. Exploratory Data Analysis (EDA)
+- Analyzed the dataset to understand the distribution and relationships between various features.
+- Explored common manufacturers, models, and their average prices.
+- Investigated correlations between car age, mileage, accidents, and price.
 
-3. Analyzing District-wise Rental Price Trends:
-   - Groups data by year and district, calculates the mean price, and creates a DataFrame (distr_rents).
-   - Extracts prices for different districts from the grouped data.
-   - Creates a 3x3 grid of subplots to visualize rental price trends for different districts over the years.
-  
-4. Predicting Rental Prices for Q3 and Q4 of 2022:
-   - Groups data by trimester and year, calculates the mean price, and creates a DataFrame (distr_trim).
-   - Prepares data for linear regression modeling.
-   - Trains a linear regression model for each quarter and predicts rental prices for Q3 and Q4 of 2022.
-   - Creates a 3x3 grid of subplots to visualize rental price trends for each quarter over the years, including predictions for 2022.
+### 2. Machine Learning Model
+- Utilized Random Forest Regression for price prediction.
+- Performed data preprocessing, including label encoding categorical variables.
+- Conducted hyperparameter tuning using RandomizedSearchCV for model optimization.
+- Achieved an R-squared (R2) score of approximately 0.92 for model evaluation.
+
+### 3. User Inputs for Price Prediction
+- Created an interactive interface using Jupyter widgets to allow users to input specific features for price prediction.
+- The interface prompts users to input details such as manufacturer, model, year, mileage, transmission type, drivetrain, fuel type, MPG, previous accidents, and price reduction.
+- Upon entering these details, the system predicts the estimated price of the used car.
+
   
 ## Results
   
